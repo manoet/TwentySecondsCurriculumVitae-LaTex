@@ -59,6 +59,7 @@ Build requirements:
 		- pgffor
 		- marvosym
 		- parskip
+		- fontawesome
 
 ### Build through GNU Make command
 Clean your project résumé.
