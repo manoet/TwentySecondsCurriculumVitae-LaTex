@@ -66,6 +66,10 @@
 	{\color{black!80} \huge #1 \rule[0.15\baselineskip]{\TotalSectionLength}{1pt}}% Print the title and auto-width rule
 }
 
+\newboolean{noskills}
+\setboolean{noskills}{false}
+\newcommand{\noskills}[0]{\setboolean{noskills}{true}}
+
 % Define custom commands for CV info
 \newcommand{\cvdate}[1]{\renewcommand{\cvdate}{#1}}
 \newcommand{\cvmail}[1]{\renewcommand{\cvmail}{#1}}
@@ -163,14 +167,14 @@
 		}
 
 		%------------------------------------------------
+		\ifthenelse{\boolean{noskills}}{}{
+			\profilesection{Skills}
 
-		\profilesection{Skills}
-
-		\skills
-		\skillstext
-		\scriptsize
-		(*)[The skill scale is from 0 (Fundamental Awareness) to 6 (Expert).]
-			
+			\skills
+			\skillstext
+			\scriptsize
+			(*)[The skill scale is from 0 (Fundamental Awareness) to 6 (Expert).]
+		}
 		%------------------------------------------------
 			
 	\end{textblock}

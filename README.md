@@ -121,6 +121,9 @@ These are the command to set up the profile information.
 * Set up the skills with text style.
 	
 		\skillstext{{name skill1/5.8},{name skill2/4}} 
+* Do not include a Skills section
+	
+		\noskills
 
 To create the profile use the command:
 
