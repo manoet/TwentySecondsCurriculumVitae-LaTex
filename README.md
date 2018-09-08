@@ -103,6 +103,15 @@ These are the command to set up the profile information.
 * Set up your personal home page.
 	
 		\cvsite{home page address}
+* Set up your github profile page
+	
+		\cvgithub{github profile address}
+* Set up your bitbucket profile page
+	
+		\cvbitbucket{bitbucket profile address}
+* Set up your flickr profile page
+	
+		\cvflickr{flickr profile address}
 * Set up a brief description of you.
 	
 		\about{brief description}
