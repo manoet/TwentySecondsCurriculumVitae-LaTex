@@ -76,6 +76,7 @@
 \newcommand{\cvnumberphone}[1]{\renewcommand{\cvnumberphone}{#1}}
 \newcommand{\cvaddress}[1]{\renewcommand{\cvaddress}{#1}}
 \newcommand{\cvsite}[1]{\renewcommand{\cvsite}{#1}}
+\newcommand{\cvlinkedin}[1]{\renewcommand{\cvlinkedin}{#1}}
 \newcommand{\cvgithub}[1]{\renewcommand{\cvgithub}{#1}}
 \newcommand{\cvbitbucket}[1]{\renewcommand{\cvbitbucket}{#1}}
 \newcommand{\cvflickr}[1]{\renewcommand{\cvflickr}{#1}}
@@ -152,6 +153,7 @@
 			\ifthenelse{\equal{\cvnumberphone}{}}{}{\textsc{\Large\icon{\faPhone}} & \cvnumberphone\\}
 			\ifthenelse{\equal{\cvsite}{}}{}{\textsc{\Large\icon{\Mundus}} & \href{\cvsite}{\cvsite}\\}
 			\ifthenelse{\equal{\cvmail}{}}{}{\textsc{\Large\icon{\faAt}} & \href{mailto:\cvmail}{\cvmail}\\}
+			\ifthenelse{\equal{\cvlinkedin}{}}{}{\textsc{\Large\icon{\faLinkedin}} & \href{https://www.\cvlinkedin}{\cvlinkedin}\\}
 			\ifthenelse{\equal{\cvgithub}{}}{}{\textsc{\Large\icon{\faGithub}} & \href{https://www.\cvgithub}{\cvgithub}\\}
 			\ifthenelse{\equal{\cvbitbucket}{}}{}{\textsc{\Large\icon{\faBitbucket}} & \href{https://www.\cvbitbucket}{\cvbitbucket}\\}
 			\ifthenelse{\equal{\cvflickr}{}}{}{\textsc{\Large\icon{\faFlickr}} & \href{https://www.\cvflickr}{\cvflickr}}
